@@ -106,7 +106,7 @@ main {
 .hero img {
     max-width: 150px;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .hero h1 {
