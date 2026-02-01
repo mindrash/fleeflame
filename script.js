@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Check if page is loaded in-app (via URL parameter)
+    const urlParams = new URLSearchParams(window.location.search);
+    const isInApp = urlParams.get('app') === 'true' || urlParams.get('embed') === 'true';
+    
+    if (isInApp) {
+        document.body.classList.add('in-app');
+    }
+
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const yearSpan = document.getElementById('year');

@@ -38,6 +38,15 @@ header {
     z-index: 1000;
 }
 
+/* Hide header when loaded in-app */
+body.in-app header {
+    display: none;
+}
+
+body.in-app .content-section {
+    margin-top: 40px;
+}
+
 .menu-toggle {
     display: flex;
     flex-direction: column;
