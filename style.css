@@ -86,6 +86,38 @@ header {
     color: var(--primary-color);
 }
 
+/* Submenu Styles */
+.nav-links .has-submenu {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-links .submenu {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.nav-links .submenu.active {
+    display: flex;
+}
+
+.nav-links .submenu a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: none;
+    margin-bottom: 12px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.nav-links .submenu a:hover {
+    opacity: 1;
+    color: var(--secondary-color);
+}
+
 /* Main Content */
 main {
     flex: 1;
@@ -128,6 +160,68 @@ main {
 .content-section h1 {
     margin-bottom: 20px;
     color: var(--primary-color);
+}
+
+/* App Cards */
+.app-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.app-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.app-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.app-card p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.app-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.app-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.app-links a:hover {
+    text-decoration: underline;
+}
+
+#contact-email {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 1px dashed var(--primary-color);
+}
+
+#contact-email:hover {
+    color: var(--secondary-color);
+    border-bottom-style: solid;
 }
 
 /* Footer */

@@ -18,8 +18,38 @@ document.addEventListener('DOMContentLoaded', () => {
              spans[2].style.transform = 'none');
     });
 
+    // Handle Apps Submenu Toggle
+    const appsMenuItem = document.querySelector('.has-submenu');
+    const submenu = document.querySelector('.submenu');
+    
+    if (appsMenuItem && submenu) {
+        appsMenuItem.addEventListener('click', (e) => {
+            e.preventDefault();
+            submenu.classList.toggle('active');
+        });
+    }
+
     // Set Footer Year
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // Email Obfuscation
+    const contactEmailLink = document.getElementById('contact-email');
+    if (contactEmailLink) {
+        contactEmailLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const user = contactEmailLink.getAttribute('data-user');
+            const domain = contactEmailLink.getAttribute('data-domain');
+            const email = `${user}@${domain}`;
+            
+            contactEmailLink.textContent = email;
+            contactEmailLink.href = `mailto:${email}`;
+            contactEmailLink.style.borderBottom = 'none'; // Remove the dashed line once revealed
+            
+            // Remove the event listener so the next click opens the mail client
+            // (Setting href usually handles this, but good to be explicit)
+            contactEmailLink.onclick = null;
+        });
     }
 });
