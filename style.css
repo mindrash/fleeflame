@@ -171,6 +171,21 @@ main {
     color: var(--primary-color);
 }
 
+.not-found {
+    text-align: center;
+}
+
+.not-found-code {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.not-found-link {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
 /* App Cards */
 .app-cards {
     display: flex;
