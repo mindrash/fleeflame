@@ -345,6 +345,22 @@ footer .footer-links a:hover {
 
 /* Mobile Adjustments */
 @media (max-width: 600px) {
+    header {
+        padding: 0 12px;
+    }
+
+    .header-logo {
+        left: 12px;
+    }
+
+    .header-logo img {
+        height: 34px;
+    }
+
+    .menu-toggle span {
+        width: 26px;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
