@@ -31,3 +31,10 @@
 ## 3. Project Goal
 **Fleeflame:** A minimalist company website referenced by mobile apps.
 **Status:** Baseline Setup.
+
+## 4. Localization Maintenance Scripts
+-   When adding or updating non-English app pages (`*.fr.html`, `*.es.html`, `*.pt.html`, `*.vi.html`) that contain store CTA badges, ensure badge image language matches page language.
+-   Run from repo root:
+    -   `./scripts/apply_localized_badges.sh` for Spelling Bee localized About/Install pages.
+    -   `./scripts/apply_localized_badges_all.sh` for all localized app pages under `apps/`.
+-   After running a script, verify changes with `git status --short` and commit/push if expected.
