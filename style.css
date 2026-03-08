@@ -70,6 +70,7 @@ body.in-app .content-section {
     z-index: 1100;
     background: none;
     border: none;
+    padding: 4px;
 }
 
 .menu-toggle span {
@@ -178,7 +179,7 @@ main {
 /* Page Content (Privacy/Support) */
 .content-section {
     max-width: 800px;
-    margin: 100px auto 40px;
+    margin: calc(var(--nav-height) + 32px) auto 40px;
     padding: 0 20px;
 }
 
@@ -361,6 +362,10 @@ footer .footer-links a:hover {
         width: 26px;
     }
 
+    .content-section {
+        margin-top: calc(var(--nav-height) + 20px);
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -379,5 +384,9 @@ footer .footer-links a:hover {
 @media (min-width: 601px) and (max-width: 900px) {
     .header-logo img {
         height: 38px;
+    }
+
+    .content-section {
+        margin-top: calc(var(--nav-height) + 24px);
     }
 }
