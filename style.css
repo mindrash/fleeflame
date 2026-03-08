@@ -85,20 +85,6 @@ body.in-app .content-section {
     position: fixed;
     top: 0;
     right: -100%;
-.top-guides {
-    margin-top: 8px;
-    font-size: 0.95rem;
-}
-
-.top-guides a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.top-guides a:hover {
-    text-decoration: underline;
-}
     height: 100vh;
     width: 250px;
     background: var(--bg-color);
@@ -240,6 +226,18 @@ main {
     color: var(--text-color);
 }
 
+.store-badge-image {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.store-badge-image img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
 .store-badge:hover {
     border-color: var(--secondary-color);
     color: var(--secondary-color);
@@ -257,6 +255,51 @@ main {
 
 .sub-links a:hover {
     text-decoration: underline;
+}
+
+.top-guides {
+    margin-top: 8px;
+    font-size: 0.95rem;
+}
+
+.top-guides a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.top-guides a:hover {
+    text-decoration: underline;
+}
+
+.persona-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.persona-card {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: #fff;
+}
+
+.persona-card strong {
+    display: block;
+    color: var(--primary-color);
+}
+
+.quick-start-box {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    background: #fff;
+    padding: 14px 16px;
+}
+
+.quick-start-box ol {
+    margin-left: 18px;
 }
 
 .not-found {
@@ -395,9 +438,13 @@ footer .footer-links a:hover {
         height: 42px;
     }
 
-    .store-badge {
+    .store-badge:not(.store-badge-image) {
         width: 100%;
         justify-content: center;
+    }
+
+    .store-badge-image img {
+        height: 42px;
     }
 }
 
