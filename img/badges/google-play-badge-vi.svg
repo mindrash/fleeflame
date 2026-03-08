@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="72" viewBox="0 0 240 72" role="img" aria-labelledby="title desc">
+  <title id="title">Tải trên Google Play</title>
+  <desc id="desc">Huy hiệu Google Play tiếng Việt</desc>
+  <rect x="1.5" y="1.5" width="237" height="69" rx="12" fill="#111" stroke="#2a2a2a" stroke-width="3"/>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif">
+    <text x="74" y="28" font-size="12" letter-spacing="0.2">TẢI TRÊN</text>
+    <text x="74" y="49" font-size="24" font-weight="700">Google Play</text>
+  </g>
+  <g transform="translate(18 16)">
+    <polygon points="0,0 22,20 0,40" fill="#00d5ff"/>
+    <polygon points="0,0 32,10 22,20" fill="#00ff8f"/>
+    <polygon points="22,20 32,30 0,40" fill="#ff4f81"/>
+    <polygon points="32,10 40,15 40,25 32,30 22,20" fill="#ffd44d"/>
+  </g>
+</svg>
