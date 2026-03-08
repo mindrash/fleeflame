@@ -85,10 +85,25 @@ body.in-app .content-section {
     position: fixed;
     top: 0;
     right: -100%;
+.top-guides {
+    margin-top: 8px;
+    font-size: 0.95rem;
+}
+
+.top-guides a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.top-guides a:hover {
+    text-decoration: underline;
+}
     height: 100vh;
     width: 250px;
     background: var(--bg-color);
     box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    line-height: 1.25;
     display: flex;
     flex-direction: column;
     padding: 80px 40px;
@@ -369,6 +384,11 @@ footer .footer-links a:hover {
     .hero h1 {
         font-size: 2rem;
     }
+
+    .content-section h1 {
+        font-size: 1.85rem;
+    }
+
 
     .app-get-icon {
         width: 42px;
