@@ -171,6 +171,23 @@ main {
     color: var(--primary-color);
 }
 
+.app-get-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-get-row p {
+    margin: 0;
+}
+
+.app-get-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 .not-found {
     text-align: center;
 }
@@ -275,5 +292,10 @@ footer .footer-links a:hover {
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .app-get-icon {
+        width: 42px;
+        height: 42px;
     }
 }

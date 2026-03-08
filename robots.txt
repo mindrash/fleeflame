@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://fleeflame.com/sitemap.xml
