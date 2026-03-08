@@ -375,3 +375,9 @@ footer .footer-links a:hover {
         justify-content: center;
     }
 }
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .header-logo img {
+        height: 38px;
+    }
+}
