@@ -13,9 +13,20 @@
         <a class="header-logo" href="/" aria-label="Go to home">
             <img src="../../img/vectorstock_14826597_transparent.png" alt="flee flame logo">
         </a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="nav-links">
             <a href="/">Home</a>
-            <a href="/apps/remdr/about.html">Back to rEMDR</a>
+            <a href="#" class="has-submenu">Apps</a>
+            <div class="submenu">
+                <a href="/apps/spelling-bee-amazing/about.html">Spelling Bee Amazing</a>
+                <a href="/apps/remdr/about.html">rEMDR</a>
+            </div>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms & Conditions</a>
             <a href="/support.html">Support</a>
         </nav>
     </header>
@@ -98,6 +109,11 @@
 
     <footer>
         <p>&copy; <span id="year"></span> flee flame. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms</a>
+            <a href="/support.html">Support</a>
+        </div>
     </footer>
 
     <script src="../../script.js"></script>
