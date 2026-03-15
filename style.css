@@ -257,6 +257,46 @@ main {
     text-decoration: underline;
 }
 
+/* App Sub Navigation */
+.app-sub-nav {
+    display: flex;
+    gap: 0;
+    margin: 16px 0 12px;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    border-bottom: 1px solid #e0e0e0;
+    white-space: nowrap;
+}
+
+.app-sub-nav::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.app-sub-nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.app-sub-nav a:hover {
+    color: var(--primary-color);
+    background-color: rgba(233, 36, 99, 0.05);
+}
+
+.app-sub-nav a.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
 .top-guides {
     margin-top: 8px;
     font-size: 0.95rem;
